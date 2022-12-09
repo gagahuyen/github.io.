@@ -1,0 +1,17 @@
+
+$(document).ready(function() {
+  $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
+}); // ready() END
+
+let navbar = document.getElementById("site-navigation");
+let navOffset = navbar.offsetTop;
+window.addEventListener("scroll", () => {
+  (window.scrollY >= navOffset) ? navbar.parentElement.classList.add("fixed-nav") : navbar.parentElement.classList.remove("fixed-nav")
+});
