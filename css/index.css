@@ -2830,6 +2830,9 @@ article {
   }
   .table-scroll table, .table-scroll table th, .table-scroll table td, .table-scroll table tr {
     font-size: 16px;
+    -moz-text-size-adjust: none;
+         text-size-adjust: none;
+    -webkit-text-size-adjust: none;
   }
   .process-03 .process-block03 .title-process-02 {
     padding-bottom: 5.8411214953vw;
